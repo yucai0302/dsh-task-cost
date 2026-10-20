@@ -29,7 +29,9 @@ node scripts/build-release.mjs --repo https://github.com/yucai0302/dsh-task-cost
 ```powershell
 npm login                      # 浏览器/OTP 交互登录，只需一次
 npm whoami                     # 应输出你的 npm 用户名
-npm publish                    # 在仓库根目录执行；包已预 build，无需构建
+node scripts/build-release.mjs --pack   # 生成 dist\stage（用户向 README + 干净 manifest）
+cd dist\stage
+npm publish                    # 从 staged 目录发布；包已预 build，无需构建
 ```
 
 - 包名 `dsh-task-cost` 目前未被占用；若发布时提示 403/已存在，说明被别人抢注，
