@@ -4,7 +4,9 @@
 `dsh.bundle`（给 DSH profile 应用配置层）和 `dsh.client`（Web 客户端 bundle）。
 发布后，任何人在 DSH 里 `dsh plugin --profile web add dsh-task-cost` 即可安装。
 
-> 本机已安装并验证（link + HMR），下面的命令用于首次公开发布。
+> 仓库已推送：<https://github.com/yucai0302/dsh-task-cost>（main @ `3c8f1a2`）。
+> 已实测 `pnpm add github:yucai0302/dsh-task-cost` 可直接安装（本包无构建步骤）。
+> 剩余只差 npm 发布（需本机 `npm login`）与可选的社区市场提交。
 
 ## 0. 前置检查
 

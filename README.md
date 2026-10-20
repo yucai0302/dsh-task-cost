@@ -8,7 +8,7 @@
 ```powershell
 dsh plugin --profile web add dsh-task-cost
 # 或从源码/GitHub：
-# dsh plugin --profile web add github:<user>/dsh-task-cost
+# dsh plugin --profile web add github:yucai0302/dsh-task-cost
 # 或离线 tarball：
 # dsh plugin --profile web add .\dsh-task-cost-0.1.0.tgz
 ```
