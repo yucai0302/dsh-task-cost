@@ -60,6 +60,7 @@ HMR 热加载；若页面没出现胶囊，`Ctrl+F5` 硬刷新一次。Plugins �
 - 不含 Search / Fetch 按次计费的部分。
 
 ## 显示与交互
+<img width="1709" height="625" alt="image" src="https://github.com/user-attachments/assets/1fcca89e-aa67-4d74-9c60-3a8927f550ff" />
 
 - 只在当前会话有 token 用量时出现，用量为 0 时自动隐藏，不占位。
 - 子会话按「子孙关系」聚合：从 Client 会话列表的 `parentId` 链递归收集，因此孙会话也会计入；同一个父会话下的兄弟会话不会互相计入。
