@@ -1,12 +1,13 @@
 # 发布与分发指南（dsh-task-cost）
 
+> **当前状态：只用 GitHub 分发，npm 暂时不发布。**
+> 仓库：<https://github.com/yucai0302/dsh-task-cost>
+> 用户安装：`dsh plugin --profile web add github:yucai0302/dsh-task-cost`
+> （npm 发布曾尝试，账号 2FA 要求发布时输入 OTP，暂缓；下文 npm 章节保留备用。）
+
 本仓库既是插件源码，也是一个可直接发布的 npm「bundle 包」：`package.json` 里声明了
 `dsh.bundle`（给 DSH profile 应用配置层）和 `dsh.client`（Web 客户端 bundle）。
-发布后，任何人在 DSH 里 `dsh plugin --profile web add dsh-task-cost` 即可安装。
-
-> 仓库已推送：<https://github.com/yucai0302/dsh-task-cost>（main @ `3c8f1a2`）。
-> 已实测 `pnpm add github:yucai0302/dsh-task-cost` 可直接安装（本包无构建步骤）。
-> 剩余只差 npm 发布（需本机 `npm login`）与可选的社区市场提交。
+一旦发布到 npm，任何人在 DSH 里 `dsh plugin --profile web add dsh-task-cost` 即可安装。
 
 ## 0. 前置检查
 

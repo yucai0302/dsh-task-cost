@@ -16,23 +16,22 @@
 
 要求 DSH `>=0.2.1-rc.2`（Web 版）。
 
-**方式 A：Plugins 页面**
-打开 Web GUI 左侧 **Plugins**，安装/启用本插件（发布到 npm 后可直接按包名安装）。
-
-**方式 B：命令行**
+**方式 A：GitHub（当前公开分发方式）**
 
 ```powershell
-dsh plugin --profile web add dsh-task-cost
+dsh plugin --profile web add github:yucai0302/dsh-task-cost
+# 或锁定版本
+dsh plugin --profile web add github:yucai0302/dsh-task-cost#v0.1.0
 ```
 
-安装后 bundle 会被加进该 profile 的 `dsh.profile.bundles`，HMR 会热加载；
-若页面未立即出现胶囊，`Ctrl+F5` 硬刷新一次。
-
-**方式 C：本地 tarball（不经过 npm）**
+**方式 B：本地 tarball**
 
 ```powershell
 dsh plugin --profile web add .\dsh-task-cost-0.1.0.tgz
 ```
+
+安装后 bundle 会被加进该 profile 的 `dsh.profile.bundles`，HMR 会热加载；
+若页面未立即出现胶囊，`Ctrl+F5` 硬刷新一次。npm 包暂未发布。
 
 ## 价格口径
 

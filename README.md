@@ -1,20 +1,26 @@
 # dsh-task-cost — 会话/子会话消费估算插件
 
+简体中文 | [English](README.en.md)
+
 > DSH Web 插件（bundle 包）：在输入框底部统计条显示**当前会话 + 全部子代理会话**的预估花费。
-> npm 包名 `dsh-task-cost`，发布/分发步骤见 [PUBLISHING.md](PUBLISHING.md)。
+> 当前通过本 GitHub 仓库分发（npm 包暂未发布），发布/分发细节见 [PUBLISHING.md](PUBLISHING.md)。
 
 ## 安装（给使用者）
 
 ```powershell
-dsh plugin --profile web add dsh-task-cost
-# 或从源码/GitHub：
-# dsh plugin --profile web add github:yucai0302/dsh-task-cost
-# 或离线 tarball：
-# dsh plugin --profile web add .\dsh-task-cost-0.1.0.tgz
+# GitHub（跟随 main）
+dsh plugin --profile web add github:yucai0302/dsh-task-cost
+
+# 或锁定 tag / Release
+dsh plugin --profile web add github:yucai0302/dsh-task-cost#v0.1.0
+
+# 或离线 tarball
+dsh plugin --profile web add .\dsh-task-cost-0.1.0.tgz
 ```
 
-要求 DSH `>=0.2.1-rc.2`（Web）。安装后 bundle 自动加入 profile 的 `dsh.profile.bundles`，
-HMR 热加载；若页面没出现胶囊，`Ctrl+F5` 硬刷新一次。Plugins 页面也能看到并管理它。
+要求 DSH `>=0.2.1-rc.2`（Web）。插件声明了 `dsh.bundle`，安装时会自动把 bundle 加进
+profile 的 `dsh.profile.bundles`；运行中的 Web 页面会热加载（无需重启），若没出现胶囊
+`Ctrl+F5` 硬刷新一次即可。Plugins 页面也能看到并管理它。
 
 在 DeepSeek Harness Web GUI 输入框底部的统计条里，追加一个 **≈¥ 消费估算** 胶囊：
 
