@@ -10,6 +10,8 @@
                                                        ↑ 本插件
 ```
 
+<img width="1709" height="625" alt="dsh-task-cost preview" src="https://github.com/user-attachments/assets/1fcca89e-aa67-4d74-9c60-3a8927f550ff" />
+
 ## 安装
 
 要求 DSH `>=0.2.1-rc.2`（Web 版）。
