@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session cost meter",
+    "description": "Shows an estimated cost for the current session, derived from its token usage, in the composer status bar. Click for the input/output breakdown and peak/off-peak rates."
+  }
+}

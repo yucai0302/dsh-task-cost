@@ -1,0 +1,68 @@
+{
+  "name": "dsh-task-cost",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness session/task cost meter: shows the estimated spend of the current session plus every spawned sub-agent session in the composer status bar, with a per-session breakdown and peak/off-peak DeepSeek pricing.",
+  "license": "MIT",
+  "author": "yucai0302",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yucai0302/dsh-task-cost.git"
+  },
+  "homepage": "https://github.com/yucai0302/dsh-task-cost#readme",
+  "bugs": {
+    "url": "https://github.com/yucai0302/dsh-task-cost/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness-plugin",
+    "cost",
+    "token",
+    "usage",
+    "billing",
+    "消费",
+    "计费"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0",
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/cost.test.mjs"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

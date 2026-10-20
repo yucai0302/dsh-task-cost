@@ -1,0 +1,7 @@
+# dsh-task-cost bundle patch: insert the one Loader row for this package.
+# The row has no Host-side behavior (index.js apply() is empty); the browser
+# half is discovered through this package's `dsh.client` declaration and served
+# by @deepseek-ai/dsh-client-modules, exactly like the shipped ui-* packages.
+- insert:
+    - id: cost-meter
+      name: dsh-task-cost
